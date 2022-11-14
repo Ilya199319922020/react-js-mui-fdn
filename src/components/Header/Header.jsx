@@ -2,6 +2,8 @@ import { Box, Grid } from '@mui/material';
 import React from 'react';
 import CropDinIcon from '@mui/icons-material/CropDin';
 import WraperHeader from './WraperHeader/WraperHeader';
+import LowerHeader from './LowerHeader/LowerHeader';
+import SiseBarHeader from './SiseBarHeader/SiseBarHeader';
 
 const Header = () => {
 
@@ -43,37 +45,18 @@ const Header = () => {
 							maxHeight: '293px',
 						}}
 					>
-						
-						<CropDinIcon 
-						sx={{
-							mt: '15px',
-							p: '0',
-							height: '83px',
-							width: '83px',
-						}}
-						/>	
-					</Grid>
-					<WraperHeader/>
-					<Grid
-						item
-						md={8}
 
-						sx={{
-							maxWidth: '586px',
-							minHeight: '293px',
-						}}
-					>
+						<CropDinIcon
+							sx={{
+								mt: '15px',
+								p: '0',
+								height: '83px',
+								width: '83px',
+							}}
+						/>
 					</Grid>
-					<Grid
-						item md={4}
-						sm={12}
-						sx={{
-							maxWidth: '1254px',
-							minHeight: '293px',
-							bgcolor: '#03abff',
-						}}
-					>
-					</Grid>
+					<WraperHeader />
+					<LowerHeader />
 				</Grid>
 			</Grid>
 			<Grid
@@ -90,6 +73,7 @@ const Header = () => {
 					pt: 0
 				}}
 			>
+				<SiseBarHeader />
 			</Grid>
 		</Grid>
 	);

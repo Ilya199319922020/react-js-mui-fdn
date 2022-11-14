@@ -14,8 +14,6 @@ const WraperHeader = () => {
 					maxWidth: '586px',
 					maxHeight: '293px',
 					bgcolor: '#fbff03',
-					// 	py: '40px',
-					// 	px: '30px',
 				}}
 			>
 				<Box
@@ -26,6 +24,9 @@ const WraperHeader = () => {
 				>
 					<Typography
 						variant="h4"
+						sx={{
+							fontSize: '25px'
+						}}
 					>
 						BULDING THE WORLD
 						<div>
@@ -40,7 +41,7 @@ const WraperHeader = () => {
 					<Typography
 						sx={{
 							height: '30px',
-							pb: '50px'
+							pb: '70px'
 						}}
 					>
 						Still other clients have reserved for capital improvement projects and will work directly with our Design and Engineering team.
@@ -60,7 +61,8 @@ const WraperHeader = () => {
 
 			</Grid>
 			<Grid
-				item md={4}
+				item 
+				md={4}
 				sx={{
 					maxWidth: '1254px',
 					minHeight: '293px',
