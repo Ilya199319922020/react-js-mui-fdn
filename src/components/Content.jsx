@@ -1,6 +1,9 @@
 import React from 'react';
 import { Box, Grid } from '@mui/material';
 import Header from './Header/Header';
+import ContentTitle from './Main/ContentTitle/ContentTitle';
+import ContentSearch from './Main/ContentSearch/ContentSearch';
+import ContentGrade from './Main/ContentGrade/ContentGrade';
 
 const Content = () => {
   return (
@@ -14,6 +17,9 @@ const Content = () => {
       }}
     >
       <Header />
+      <ContentTitle/>
+      <ContentSearch/>
+      <ContentGrade/>
     </Box>
   );
 };

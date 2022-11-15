@@ -22,7 +22,6 @@ const LowerHeader = () => {
 					maxWidth: '1254px',
 					minHeight: '293px',
 					bgcolor: '#03abff',
-
 				}}
 				container
 				direction="column"
