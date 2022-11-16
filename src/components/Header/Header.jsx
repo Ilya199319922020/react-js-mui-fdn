@@ -1,4 +1,4 @@
-import { Box, Grid } from '@mui/material';
+import {  Grid } from '@mui/material';
 import React from 'react';
 import CropDinIcon from '@mui/icons-material/CropDin';
 import WraperHeader from './WraperHeader/WraperHeader';
@@ -45,7 +45,6 @@ const Header = () => {
 							maxHeight: '293px',
 						}}
 					>
-
 						<CropDinIcon
 							sx={{
 								mt: '15px',

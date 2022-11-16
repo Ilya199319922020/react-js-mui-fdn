@@ -2,8 +2,8 @@ import React from 'react';
 import HorizontalRuleIcon from '@mui/icons-material/HorizontalRule';
 import { Grid, Box, Typography, Button } from '@mui/material';
 
-export const ComponentCardGrade = ({
-	bg, bgBtn, divider, sizeW, sizeH, textTitlleTop, 
+export const ComponentCardGrade = ({ xs, sm, md,
+	bg, bgBtn, sizeW, sizeH, textTitlleTop,
 	textTitlleBottom, textBtn, children
 }) => {
 	const bgButton = bgBtn ? bgBtn : 'black'
@@ -11,9 +11,9 @@ export const ComponentCardGrade = ({
 	return (
 		<Grid
 			item
-			md={divider}
-			sm={divider}
-			xs={divider}
+			md={md}
+			sm={sm}
+			xs={xs}
 			sx={{
 				maxWidth: sizeW,
 				height: sizeH,
@@ -29,7 +29,8 @@ export const ComponentCardGrade = ({
 				<Typography
 					variant="h4"
 					sx={{
-						fontSize: '25px'
+						fontSize: '25px',
+
 					}}
 				>
 					{
@@ -49,7 +50,7 @@ export const ComponentCardGrade = ({
 				<Typography
 					sx={{
 						height: '30px',
-						pb: '70px'
+						pb: sizeH >= 586 ? '150%' : '70px',
 					}}
 				>
 					{

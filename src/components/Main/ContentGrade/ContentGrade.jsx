@@ -61,7 +61,9 @@ const ContentGrade = () => {
 			</ComponentItemNickname>
 			<ComponentCardGrade
 				bg={'#bababa'}
-				divider={6}
+				md={6}
+			sm={6}
+			xs={6}
 				sizeW={586}
 				sizeH={293}
 				textTitlleTop={'YOUR BULDING IS IN'}

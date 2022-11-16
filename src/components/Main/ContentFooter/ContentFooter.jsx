@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Grid, InputAdornment, TextField, Typography } from '@mui/material';
+import { Box, Button, Grid, TextField, Typography } from '@mui/material';
 import { ComponentCardGrade } from '../ContentGrade/ComponentCardGrade/ComponentCardGrade';
 import { GridDateValue } from '../../../assets/AuxiliaryComponents/AuxiliaryComponents';
 import { ImageContentSearchA } from '../ContentSearch/ImageContentSearch/ImageContentSearch';
@@ -7,7 +7,8 @@ import SettingsSuggestIcon from '@mui/icons-material/SettingsSuggest';
 import HorizontalRuleIcon from '@mui/icons-material/HorizontalRule';
 
 const ContentFooter = () => {
-	return (
+
+	return (<>
 		<Grid
 			container
 			md={12}
@@ -20,12 +21,14 @@ const ContentFooter = () => {
 			}}
 		>
 			<ComponentCardGrade
-				divider={3}
 				sizeW={293}
 				sizeH={586}
 				textTitlleTop={'Contemporary Villa'}
 				textTitlleBottom={'GOOD HANDS'}
 				textBtn={'ABOUT COMPANY'}
+				md={3}
+				sm={12}
+				xs={12}
 			>
 				Hi mission is to provide the highest level of service for our
 				client-partners from concept through highest
@@ -37,8 +40,8 @@ const ContentFooter = () => {
 			<Grid
 				item
 				md={3}
-				sm={3}
-				xs={3}
+				sm={6}
+				xs={6}
 				sx={{
 					maxWidth: '293px',
 					height: '586px',
@@ -49,8 +52,8 @@ const ContentFooter = () => {
 			<Grid
 				item
 				md={3}
-				sm={3}
-				xs={3}
+				sm={6}
+				xs={6}
 				sx={{
 					maxWidth: '293px',
 					height: '586px',
@@ -67,14 +70,12 @@ const ContentFooter = () => {
 						bgcolor: '#bababa'
 					}}
 				>
-
 				</Grid>
 				<GridDateValue
 					day={'01'}
 					month={'09'}
 				/>
 			</Grid>
-
 			<Grid
 				item
 				md={3}
@@ -140,40 +141,50 @@ const ContentFooter = () => {
 						<HorizontalRuleIcon
 							sx={{
 								fontSize: '200%',
-								pb: '60px'
+								pb: '50px'
 							}}
 						/>
 						<TextField
 							sx={{
+								p: '0',
 								label: {
-									color: "#faf9f7",
+									color: "#03abff",
+								},
+								'& .MuiInputBase-input': {
+									color: 'white',
+									borderColor: 'white',
+									bgcolor: 'white',
+									height: '15px'
 								},
 							}}
 							label="E-mail"
-							InputProps={{
-								startAdornment: (
-									<InputAdornment position="start">
-									</InputAdornment>
-								),
-							}}
-							variant="filled"
+							variant='filled'
 						/>
-						<Typography
-							variant="body"
+						<Box
 							sx={{
-								fontSize: '12px',
-								pt: '15px',
-								pb: '50px',
-								opacity: '0.5',
-								textAlign: 'end'
+								display: 'flex',
+								justifyContent: 'end'
 							}}
 						>
-							23 commenets
-						</Typography>
+							<Button
+								variant="text"
+								sx={{
+									fontSize: '10px',
+									pt: '15px',
+									pb: '50px',
+									opacity: '0.5',
+									textAlign: 'end',
+									color: "white",
+								}}
+							>
+								23 commenets
+							</Button>
+						</Box>
 					</Box>
 				</Grid>
 			</Grid>
 		</Grid>
+	</>
 	);
 };
 

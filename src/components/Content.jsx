@@ -5,6 +5,7 @@ import ContentTitle from './Main/ContentTitle/ContentTitle';
 import ContentSearch from './Main/ContentSearch/ContentSearch';
 import ContentGrade from './Main/ContentGrade/ContentGrade';
 import ContentFooter from './Main/ContentFooter/ContentFooter';
+import Footer from './Footer/Footer';
 
 const Content = () => {
   return (
@@ -22,6 +23,7 @@ const Content = () => {
       <ContentSearch/>
       <ContentGrade/>
       <ContentFooter/>
+      <Footer/>
     </Box>
   );
 };
