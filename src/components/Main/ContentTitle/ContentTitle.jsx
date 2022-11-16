@@ -20,6 +20,8 @@ const ContentTitle = () => {
 					key={element.id}
 					day={element.day}
 					month={element.month}
+					divider={3}
+					bg={'#bababa'}
 				/>
 		);
 
@@ -34,7 +36,6 @@ const ContentTitle = () => {
 				height: '586px',
 				px: '375px',
 			}}
-
 		>
 			{
 				listItemText

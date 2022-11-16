@@ -3,7 +3,8 @@ import HorizontalRuleIcon from '@mui/icons-material/HorizontalRule';
 import { Grid, Box, Typography, Button } from '@mui/material';
 
 export const ComponentCardGrade = ({
-	bg, bgBtn, divider, sizeW, textTitlleTop, textTitlleBottom, textBtn, children
+	bg, bgBtn, divider, sizeW, sizeH, textTitlleTop, 
+	textTitlleBottom, textBtn, children
 }) => {
 	const bgButton = bgBtn ? bgBtn : 'black'
 
@@ -15,7 +16,7 @@ export const ComponentCardGrade = ({
 			xs={divider}
 			sx={{
 				maxWidth: sizeW,
-				height: '293px',
+				height: sizeH,
 				bgcolor: bg,
 			}}
 		>

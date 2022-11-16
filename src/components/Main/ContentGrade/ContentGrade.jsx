@@ -63,6 +63,7 @@ const ContentGrade = () => {
 				bg={'#bababa'}
 				divider={6}
 				sizeW={586}
+				sizeH={293}
 				textTitlleTop={'YOUR BULDING IS IN'}
 				textTitlleBottom={'GOOD HANDS'}
 				textBtn={'ABOUT COMPANY'}

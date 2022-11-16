@@ -1,7 +1,5 @@
 import React from 'react'
-
 import { Box, Grid, Typography } from '@mui/material';
-
 
 export const ContentIcon = ({ bg, valueNumber, textCard, children }) => {
 

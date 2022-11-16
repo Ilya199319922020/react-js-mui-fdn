@@ -1,4 +1,4 @@
-import {  Grid, InputAdornment, TextField, Typography } from '@mui/material';
+import { Grid, InputAdornment, TextField, Typography } from '@mui/material';
 import React from 'react';
 import { ImageContentSearchA } from './ImageContentSearch/ImageContentSearch';
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
@@ -43,6 +43,7 @@ const ContentSearch = () => {
 
 					<ImageContentSearchA
 						bg={'#fbff03'}
+						divider={6}
 					>
 						<PictureAsPdfIcon
 							sx={{
@@ -63,6 +64,7 @@ const ContentSearch = () => {
 					</ImageContentSearchA>
 					<ImageContentSearchA
 						bg={'#03abff'}
+						divider={6}
 					>
 						<CircleIcon
 							sx={{
@@ -106,7 +108,7 @@ const ContentSearch = () => {
 			>
 				<TextField
 					sx={{
-												label: {
+						label: {
 							color: "#faf9f7",
 						}
 					}}

@@ -47,8 +47,6 @@ export const GridText = ({ title, text }) => {
 						}
 					</Typography>
 				</Box>
-
-
 			</Grid>
 		</>
 	);
@@ -86,17 +84,18 @@ export const GridSize = ({ sizeText }) => {
 	);
 };
 
-export const GridDateValue = ({ day, month }) => {
+export const GridDateValue = ({ day, month, bg, divider }) => {
+	
 	return (
 		<>
 			<Grid
 				item
-				md={3}
-				sm={3}
+				md={divider}
+				sm={divider}
 				sx={{
 					maxWidth: '293px',
 					height: '293px',
-					bgcolor: '#bababa',
+					bgcolor: bg,
 				}}
 				container
 				direction="column"
