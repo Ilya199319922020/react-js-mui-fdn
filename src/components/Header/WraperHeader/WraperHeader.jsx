@@ -40,7 +40,7 @@ const WraperHeader = () => {
 					/>
 					<Typography
 						sx={{
-							height: '30px',
+							maxHeight: '30px',
 							pb: '70px'
 						}}
 					>
@@ -57,8 +57,6 @@ const WraperHeader = () => {
 						READ MODE
 					</Button>
 				</Box>
-
-
 			</Grid>
 			<Grid
 				item 
@@ -66,10 +64,8 @@ const WraperHeader = () => {
 				sx={{
 					maxWidth: '1254px',
 					minHeight: '293px',
-
 				}}
 			>
-
 			</Grid>
 		</>
 	);

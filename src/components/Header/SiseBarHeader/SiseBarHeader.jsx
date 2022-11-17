@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Button, ButtonGroup, Grid, Typography } from '@mui/material';
+import { Box, Button, Grid, Typography } from '@mui/material';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
@@ -24,7 +24,7 @@ const SiseBarHeader = () => {
 					md={6}
 					sx={{
 						maxWidth: '293px',
-						height: '293px',
+						maxHeight: '293px',
 					}}
 				>
 					<Box
@@ -82,7 +82,7 @@ const SiseBarHeader = () => {
 					md={6}
 					sx={{
 						width: '293px',
-						height: '293px',
+						minHeight: '293px',
 						maxHeight: '293px',
 					}}
 				>
@@ -93,7 +93,7 @@ const SiseBarHeader = () => {
 					sx={{
 						backgroundColor: 'white',
 						maxWidth: '293px',
-						height: '293px',
+						minHeight: '293px',
 						maxHeight: '293px',
 					}}
 					container

@@ -1,9 +1,9 @@
-import {  Grid } from '@mui/material';
+import { Box, Grid } from '@mui/material';
 import React from 'react';
-import CropDinIcon from '@mui/icons-material/CropDin';
 import WraperHeader from './WraperHeader/WraperHeader';
 import LowerHeader from './LowerHeader/LowerHeader';
 import SiseBarHeader from './SiseBarHeader/SiseBarHeader';
+import image from '../../assets/image/Frame1.png';
 
 const Header = () => {
 
@@ -12,7 +12,7 @@ const Header = () => {
 			container
 			sx={{
 				maxWidth: '1920px',
-				height: '879px',
+				maxHeight: '879px',
 			}}
 		>
 			<Grid
@@ -22,7 +22,7 @@ const Header = () => {
 				xs={7.8375}
 				sx={{
 					maxWidth: '1254px',
-					height: '879px',
+					maxHeight: '879px',
 					bgcolor: '#bababa',
 				}}
 			>
@@ -43,16 +43,15 @@ const Header = () => {
 							maxWidth: '1254px',
 							minHeight: '293px',
 							maxHeight: '293px',
+							pt: '15px'
 						}}
 					>
-						<CropDinIcon
-							sx={{
-								mt: '15px',
-								p: '0',
-								height: '83px',
-								width: '83px',
-							}}
-						/>
+						<Box>
+							<img
+								src={image}
+								alt="scene"
+							/>
+						</Box>
 					</Grid>
 					<WraperHeader />
 					<LowerHeader />
@@ -65,7 +64,7 @@ const Header = () => {
 				xs={4.1625}
 				sx={{
 					maxWidth: '666px',
-					height: '879px',
+					maxHeight: '879px',
 					bgcolor: '#232126',
 					m: 0,
 					pl: 0,

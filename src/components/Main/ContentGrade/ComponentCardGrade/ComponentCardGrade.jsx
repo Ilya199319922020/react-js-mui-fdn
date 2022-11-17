@@ -16,7 +16,8 @@ export const ComponentCardGrade = ({ xs, sm, md,
 			xs={xs}
 			sx={{
 				maxWidth: sizeW,
-				height: sizeH,
+				maxHeight: sizeH,
+				minHeight: '300px',
 				bgcolor: bg,
 			}}
 		>
@@ -49,7 +50,8 @@ export const ComponentCardGrade = ({ xs, sm, md,
 				/>
 				<Typography
 					sx={{
-						height: '30px',
+						maxHeight: '30px',
+						minHeight: '20px',
 						pb: sizeH >= 586 ? '150%' : '70px',
 					}}
 				>

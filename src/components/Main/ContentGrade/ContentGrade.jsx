@@ -30,7 +30,8 @@ const ContentGrade = () => {
 			xs={12}
 			sx={{
 				maxWidth: '1172px',
-				height: '879px',
+				maxHeight: '879px',
+				minHeight: '500px',
 				px: '375px',
 			}}
 
@@ -48,7 +49,8 @@ const ContentGrade = () => {
 				</Box>
 				<Typography
 					sx={{
-						height: '30px',
+						maxHeight: '30px',
+						minHeight: '20px',
 						pb: '70px',
 						pt: '10px',
 						textAlign: 'center',
@@ -62,8 +64,8 @@ const ContentGrade = () => {
 			<ComponentCardGrade
 				bg={'#bababa'}
 				md={6}
-			sm={6}
-			xs={6}
+				sm={6}
+				xs={6}
 				sizeW={586}
 				sizeH={293}
 				textTitlleTop={'YOUR BULDING IS IN'}
@@ -121,9 +123,9 @@ const ContentGrade = () => {
 				valueNumber={'55 000'}
 				textCard={'Expert Witness'}
 			>
-				<ElectricBoltIcon 
+				<ElectricBoltIcon
 					sx={{
-						fontSize: '400%', 
+						fontSize: '400%',
 						color: '#03abff',
 						bgcolor: '#fbff03'
 					}}
@@ -134,15 +136,15 @@ const ContentGrade = () => {
 				textCard={'Construction'}
 				bg={'#bababa'}
 			>
-				<OpacityIcon 
+				<OpacityIcon
 					sx={{
-						fontSize: '400%', 
+						fontSize: '400%',
 						color: '#03abff',
 						bgcolor: '#fbff03'
 					}}
 				/>
 			</ContentIcon>
-			
+
 			<ComponentNews />
 			<ComponentItemNickname
 				sizeW={'293px'}
@@ -173,9 +175,9 @@ const ContentGrade = () => {
 				textCard={'Procurement'}
 				bg={'#bababa'}
 			>
-				<SettingsIcon 
+				<SettingsIcon
 					sx={{
-						fontSize: '400%', 
+						fontSize: '400%',
 						color: '#03abff',
 						bgcolor: '#fbff03'
 					}}
@@ -185,9 +187,9 @@ const ContentGrade = () => {
 				valueNumber={'78 150'}
 				textCard={'Projects Managments'}
 			>
-				<LightbulbIcon 
+				<LightbulbIcon
 					sx={{
-						fontSize: '400%', 
+						fontSize: '400%',
 						color: '#03abff',
 						bgcolor: '#fbff03'
 					}}

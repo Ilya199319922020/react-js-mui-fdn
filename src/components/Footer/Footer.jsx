@@ -20,9 +20,11 @@ const Footer = () => {
 			xs={12}
 			sx={{
 				maxWidth: '1172px',
-				height: '80px',
+				minHeight: '40px',
+				maxHeight: '40px',
 				px: '375px',
 			}}
+
 		>
 			<Grid
 				item
@@ -30,9 +32,9 @@ const Footer = () => {
 				sm={12}
 				xs={12}
 				sx={{
-					minWidth: '390px',
+					maxWidth: '350px',
+					minWidth: '350px',
 					maxHeight: '80px',
-					display: 'flex',
 					fontSize: '10px'
 				}}
 				display='flex'
@@ -49,7 +51,7 @@ const Footer = () => {
 				<Typography
 					sx={{
 						fontSize: '10px',
-						color:'#03abff',
+						color: '#03abff',
 					}}
 				>
 					Stylemixthemes
@@ -61,6 +63,7 @@ const Footer = () => {
 				sm={12}
 				xs={12}
 				sx={{
+					maxWidth: '550px',
 					minWidth: '600px',
 					maxHeight: '80px',
 				}}
@@ -89,7 +92,7 @@ const Footer = () => {
 				}
 			</Grid>
 		</Grid>
-	)
-}
+	);
+};
 
-export default Footer
+export default Footer;

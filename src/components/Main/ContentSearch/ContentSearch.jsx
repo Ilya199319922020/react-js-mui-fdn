@@ -1,10 +1,9 @@
-import { Grid, InputAdornment, TextField, Typography } from '@mui/material';
 import React from 'react';
+import { Box, Grid, InputAdornment, TextField, Typography } from '@mui/material';
 import { ImageContentSearchA } from './ImageContentSearch/ImageContentSearch';
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-import CircleIcon from '@mui/icons-material/Circle';
 import SearchIcon from '@mui/icons-material/Search';
+import image from '../../../assets/image/Frame2.png'
 
 const ContentSearch = () => {
 	return (
@@ -41,7 +40,6 @@ const ContentSearch = () => {
 
 						}}
 					>
-
 						<ImageContentSearchA
 							bg={'#fbff03'}
 							divider={6}
@@ -67,18 +65,19 @@ const ContentSearch = () => {
 							bg={'#03abff'}
 							divider={6}
 						>
-							<CircleIcon
-								sx={{
-									fontSize: '500%',
-
+							<Box
+								xs={{
+									height: "80px",
+									width: '20px',
 								}}
-							/>
-							<ArrowDropDownIcon
-								sx={{
-									fontSize: '500%',
-									color: 'white',
-								}}
-							/>
+							>
+								<img
+									height="100%"
+									src={image}
+									alt="scene"
+									width='100%'
+								/>
+							</Box>
 							<Typography
 								color="black"
 								sx={{
@@ -109,15 +108,25 @@ const ContentSearch = () => {
 				>
 					<TextField
 						sx={{
+							maxWidth: '515px',
+							minWidth: '515px',
 							label: {
+
 								color: "#faf9f7",
+							},
+							'& .MuiInputBase-input': {
+								borderColor: "#faf9f7",
+								color: "#faf9f7",
+							},
+							'& :before': {
+								borderColor: "#faf9f7",
 							}
 						}}
-						label="TextField"
+						label="What you're looking for"
 						InputProps={{
 							endAdornment: (
 								<InputAdornment position="start">
-									<SearchIcon sx={{ color: "#faf9f7", mr: 1, my: 0.5 }} />
+									<SearchIcon sx={{ disply: 'flex', alignItems: 'center', color: "#faf9f7", mr: 1 }} />
 								</InputAdornment>
 							),
 						}}

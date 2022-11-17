@@ -33,7 +33,8 @@ const ContentTitle = () => {
 			xs={12}
 			sx={{
 				maxWidth: '1172px',
-				height: '586px',
+				maxHeight: '586px',
+				minHeight: '300px',
 				px: '375px',
 			}}
 		>
