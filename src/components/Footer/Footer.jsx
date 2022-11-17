@@ -20,11 +20,10 @@ const Footer = () => {
 			xs={12}
 			sx={{
 				maxWidth: '1172px',
-				minHeight: '40px',
+				minHeight: '20px',
 				maxHeight: '40px',
 				px: '375px',
 			}}
-
 		>
 			<Grid
 				item
@@ -34,7 +33,8 @@ const Footer = () => {
 				sx={{
 					maxWidth: '350px',
 					minWidth: '350px',
-					maxHeight: '80px',
+					maxHeight: '40px',
+					minHeight: '20px',
 					fontSize: '10px'
 				}}
 				display='flex'
@@ -65,7 +65,8 @@ const Footer = () => {
 				sx={{
 					maxWidth: '550px',
 					minWidth: '600px',
-					maxHeight: '80px',
+					maxHeight: '40px',
+					minHeight: '20px',
 				}}
 				display='flex'
 				alignItems='center'
@@ -77,8 +78,8 @@ const Footer = () => {
 						onClick={() => handleActiveCard(j)}
 						variant="text"
 						sx={{
-							height: '20px',
-							width: '70px',
+							minHeight: '20px',
+							maxWidth: '70px',
 							color: active === j ? '#03abff' : '#b3b0a8',
 							fontSize: '6px',
 							"&:active": {

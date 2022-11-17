@@ -13,21 +13,20 @@ const ContentSearch = () => {
 				md={12}
 				sm={12}
 				xs={12}
-
 				sx={{
 					maxWidth: '1920px',
 					height: '293px',
 				}}
 			>
-				<Grid
-					item
-					md={6}
-					sm={3.6625}
-					xs={3.6625}
-					sx={{
-						maxWidth: '961px',
-						height: '293px',
 
+				<Grid
+					container
+					md={6}
+					sm={12}
+					xs={12}
+					sx={{
+						maxWidth: '959px',
+						maxHeight: '293px',
 					}}
 				>
 					<Grid
@@ -37,12 +36,16 @@ const ContentSearch = () => {
 						xs={12}
 						sx={{
 							paddingLeft: '375px',
-
+							maxWidth: '586px',
+							minWidth: '500px',
 						}}
 					>
 						<ImageContentSearchA
 							bg={'#fbff03'}
-							divider={6}
+
+							md={6}
+							sm={12}
+							xs={12}
 						>
 							<PictureAsPdfIcon
 								sx={{
@@ -63,7 +66,9 @@ const ContentSearch = () => {
 						</ImageContentSearchA>
 						<ImageContentSearchA
 							bg={'#03abff'}
-							divider={6}
+							md={6}
+							sm={12}
+							xs={12}
 						>
 							<Box
 								xs={{
@@ -94,10 +99,12 @@ const ContentSearch = () => {
 					item
 					md={6}
 					sm={6}
-					xs={6}
+					xs={12}
 					sx={{
 						maxWidth: '961px',
-						height: '293px',
+						minWidth: '586px',
+						maxHeight: '293px',
+						minHeight: '200px',
 						bgcolor: '#232126',
 						pl: '30px',
 					}}
@@ -106,32 +113,38 @@ const ContentSearch = () => {
 					alignItems="start"
 					justifyContent={"center"}
 				>
-					<TextField
+					<Box
 						sx={{
-							maxWidth: '515px',
 							minWidth: '515px',
-							label: {
+						}}
+					>
+						<TextField
+							sx={{
+								maxWidth: '515px',
+								minWidth: '100%',
+								label: {
 
-								color: "#faf9f7",
-							},
-							'& .MuiInputBase-input': {
-								borderColor: "#faf9f7",
-								color: "#faf9f7",
-							},
-							'& :before': {
-								borderColor: "#faf9f7",
-							}
-						}}
-						label="What you're looking for"
-						InputProps={{
-							endAdornment: (
-								<InputAdornment position="start">
-									<SearchIcon sx={{ disply: 'flex', alignItems: 'center', color: "#faf9f7", mr: 1 }} />
-								</InputAdornment>
-							),
-						}}
-						variant="standard"
-					/>
+									color: "#faf9f7",
+								},
+								'& .MuiInputBase-input': {
+									borderColor: "#faf9f7",
+									color: "#faf9f7",
+								},
+								'& ::before': {
+									borderColor: "#faf9f7",
+								}
+							}}
+							label="What you're looking for"
+							InputProps={{
+								endAdornment: (
+									<InputAdornment position="start">
+										<SearchIcon sx={{ disply: 'flex', alignItems: 'center', color: "#faf9f7", mr: 1 }} />
+									</InputAdornment>
+								),
+							}}
+							variant="standard"
+						/>
+					</Box>
 				</Grid>
 			</Grid>
 		</>

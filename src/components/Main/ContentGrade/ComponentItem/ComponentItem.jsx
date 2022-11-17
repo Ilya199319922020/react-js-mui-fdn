@@ -2,7 +2,9 @@ import React from 'react';
 import CropOriginalIcon from '@mui/icons-material/CropOriginal';
 import { Box, Grid, Typography } from '@mui/material';
 
-export const ComponentItemNickname = ({ bg, children, sizeW, texTitle, divider }) => {
+export const ComponentItemNickname = ({ 
+	bg, children, sizeW, texTitle, divider 
+}) => {
 	const denominator = divider ? divider : 6;
 	
 	return (

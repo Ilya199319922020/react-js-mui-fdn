@@ -4,7 +4,7 @@ import { GridDateValue, GridSize, GridText } from '../../../assets/AuxiliaryComp
 import { arrData } from '../../../assets/data/textData';
 
 const ContentTitle = () => {
-	const listItemText = arrData
+	const listItemTextFirst = arrData.partFirst
 		.map(element => element.title
 			? <GridText
 				key={element.id}
@@ -25,6 +25,29 @@ const ContentTitle = () => {
 				/>
 		);
 
+	const listItemTextThe = arrData.partThe
+		.map(element => element.title
+			? <GridText
+				key={element.id}
+				title={element.title}
+				text={element.text}
+			/>
+			: element.sizeText
+				? <GridSize
+					key={element.id}
+					sizeText={element.sizeText}
+				/>
+				: <GridDateValue
+					key={element.id}
+					day={element.day}
+					month={element.month}
+					md={6}
+					sm={6}
+					xs={6}
+					bg={'#bababa'}
+				/>
+		);
+
 	return (
 		<Grid
 			container
@@ -38,9 +61,39 @@ const ContentTitle = () => {
 				px: '375px',
 			}}
 		>
-			{
-				listItemText
-			}
+			<Grid
+				container
+				md={6}
+				sm={6}
+				xs={12}
+				sx={{
+					maxWidth: '586px',
+					minWidth: '500px',
+					maxHeight: '586px',
+					minHeight: '500px',
+				}}
+			>
+				{
+					listItemTextFirst
+				}
+			</Grid>
+			<Grid
+				container
+				md={6}
+				sm={6}
+				xs={12}
+				sx={{
+					maxWidth: '586px',
+					minWidth: '500px',
+					maxHeight: '586px',
+					minHeight: '500px',
+				}}
+			>
+				{
+					listItemTextThe
+				}
+			</Grid>
+
 		</Grid>
 	);
 };

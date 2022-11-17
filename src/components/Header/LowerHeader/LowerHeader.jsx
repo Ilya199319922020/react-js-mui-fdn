@@ -10,6 +10,7 @@ const LowerHeader = () => {
 				md={8}
 				sx={{
 					maxWidth: '586px',
+					minWidth: '20px',
 					maxHeight: '293px',
 				}}
 			>
@@ -20,6 +21,7 @@ const LowerHeader = () => {
 				sm={12}
 				sx={{
 					maxWidth: '1254px',
+					minWidth: '250px',
 					minHeight: '293px',
 					bgcolor: '#03abff',
 				}}
@@ -29,7 +31,6 @@ const LowerHeader = () => {
 				justifyContent={"center"}
 			>
 				<PlayCircleIcon
-
 					sx={{
 						fontSize: '600%',
 						textAlign: 'center',

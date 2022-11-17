@@ -6,13 +6,14 @@ export const ContentIcon = ({ bg, valueNumber, textCard, children }) => {
 	return (
 		<Grid
 			item
-			md={3}
-			sm={3}
-			xs={3}
+			md={6}
+			sm={6}
+			xs={6}
 			sx={{
 				maxWidth: '293px',
-				height: '293px',
-				bgcolor: bg
+				maxHeight: '293px',
+				minHeight: '293px',
+				bgcolor: bg,
 			}}
 			container
 			direction="column"
@@ -21,7 +22,7 @@ export const ContentIcon = ({ bg, valueNumber, textCard, children }) => {
 			<Box
 				sx={{
 					py: '40px',
-					px: '30px',
+					px: '40px',
 				}}
 				display="flex"
 				flexDirection="column"

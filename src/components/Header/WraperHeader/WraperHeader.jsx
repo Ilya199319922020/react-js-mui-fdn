@@ -10,8 +10,10 @@ const WraperHeader = () => {
 				item
 				md={8}
 				sm={12}
+				xs={12}
 				sx={{
 					maxWidth: '586px',
+					minWidth: '400px',
 					maxHeight: '293px',
 					bgcolor: '#fbff03',
 				}}
@@ -59,11 +61,15 @@ const WraperHeader = () => {
 				</Box>
 			</Grid>
 			<Grid
-				item 
+				item
 				md={4}
+
+				sm={4}
+				xs={4}
 				sx={{
 					maxWidth: '1254px',
-					minHeight: '293px',
+
+					minHeight: '20px',
 				}}
 			>
 			</Grid>

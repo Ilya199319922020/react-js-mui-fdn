@@ -8,8 +8,9 @@ export const GridText = ({ title, text }) => {
 		<>
 			<Grid
 				item
-				md={3}
-				sm={3}
+				md={6}
+				sm={6}
+				xs={6}
 				sx={{
 					maxWidth: '293px',
 					height: '293px',
@@ -57,8 +58,9 @@ export const GridSize = ({ sizeText }) => {
 		<>
 			<Grid
 				item
-				md={3}
-				sm={3}
+				md={6}
+				sm={6}
+				xs={6}
 				sx={{
 					maxWidth: '293px',
 					height: '293px',
@@ -84,17 +86,19 @@ export const GridSize = ({ sizeText }) => {
 	);
 };
 
-export const GridDateValue = ({ day, month, bg, divider }) => {
+export const GridDateValue = ({ day, month, bg, md, sm, xs }) => {
 	
 	return (
 		<>
 			<Grid
 				item
-				md={divider}
-				sm={divider}
+				md={md}
+				sm={sm}
+				xs={xs}
 				sx={{
 					maxWidth: '293px',
-					height: '293px',
+					minWidth: '293px',
+					minHeight: '293px',
 					bgcolor: bg,
 				}}
 				container

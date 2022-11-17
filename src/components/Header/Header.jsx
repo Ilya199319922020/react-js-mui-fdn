@@ -29,8 +29,8 @@ const Header = () => {
 				<Grid
 					container
 					md={12}
-					sm={12}
-					xs={12}
+					sm={6}
+					xs={6}
 					sx={{
 						paddingLeft: '375px',
 					}}
@@ -58,20 +58,33 @@ const Header = () => {
 				</Grid>
 			</Grid>
 			<Grid
-				item
+				container
 				md={4.1625}
 				sm={4.1625}
 				xs={4.1625}
 				sx={{
 					maxWidth: '666px',
+					minWidth: '600px',
 					maxHeight: '879px',
-					bgcolor: '#232126',
-					m: 0,
-					pl: 0,
-					pt: 0
+					minHeight: '600px',
 				}}
 			>
-				<SiseBarHeader />
+				<Grid
+					item
+					md={12}
+					sm={6}
+					xs={6}
+					sx={{
+						maxWidth: '666px',
+						maxHeight: '879px',
+						bgcolor: '#232126',
+						m: 0,
+						pl: 0,
+						pt: 0
+					}}
+				>
+					<SiseBarHeader />
+				</Grid>
 			</Grid>
 		</Grid>
 	);

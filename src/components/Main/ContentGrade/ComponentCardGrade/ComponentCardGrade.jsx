@@ -6,7 +6,7 @@ export const ComponentCardGrade = ({ xs, sm, md,
 	bg, bgBtn, sizeW, sizeH, textTitlleTop,
 	textTitlleBottom, textBtn, children
 }) => {
-	const bgButton = bgBtn ? bgBtn : 'black'
+	const bgButton = bgBtn ? bgBtn : 'black';
 
 	return (
 		<Grid
@@ -17,13 +17,13 @@ export const ComponentCardGrade = ({ xs, sm, md,
 			sx={{
 				maxWidth: sizeW,
 				maxHeight: sizeH,
-				minHeight: '300px',
+				minHeight: sizeH === 586 ? '400px' : '293px',
 				bgcolor: bg,
 			}}
 		>
 			<Box
 				sx={{
-					py: '40px',
+					py: '30px',
 					px: '30px',
 				}}
 			>
@@ -31,7 +31,6 @@ export const ComponentCardGrade = ({ xs, sm, md,
 					variant="h4"
 					sx={{
 						fontSize: '25px',
-
 					}}
 				>
 					{
@@ -52,7 +51,7 @@ export const ComponentCardGrade = ({ xs, sm, md,
 					sx={{
 						maxHeight: '30px',
 						minHeight: '20px',
-						pb: sizeH >= 586 ? '150%' : '70px',
+						pb: sizeH === 586 ? '150%' : '50px',
 					}}
 				>
 					{

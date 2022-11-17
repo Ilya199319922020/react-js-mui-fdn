@@ -24,13 +24,13 @@ const ContentFooter = () => {
 				<Grid
 					container
 					md={6}
-					sm={12}
+					sm={6}
 					xs={12}
 					sx={{
-												maxWidth: '586px',
-						minWidth: '500px',
+						maxWidth: '586px',
+						minWidth: '400px',
 						maxHeight: '586px',
-						minHeight: '586px',
+						minHeight: '300px',
 					}}
 				>
 					<ComponentCardGrade
@@ -66,20 +66,19 @@ const ContentFooter = () => {
 				<Grid
 					container
 					md={6}
-					sm={12}
+					sm={6}
 					xs={12}
 					sx={{
 						maxWidth: '586px',
-						minWidth: '500px',
+						minWidth: '400px',
 						maxHeight: '586px',
-						minHeight: '586px',
+						minHeight: '300px',
 					}}
 				>
-
 					<Grid
 						container
 						md={6}
-						sm={12}
+						sm={6}
 						xs={12}
 						sx={{
 							maxWidth: '293px',
@@ -97,7 +96,7 @@ const ContentFooter = () => {
 								maxWidth: '293px',
 								minWidth: '200px',
 								maxHeight: '293px',
-								minHeight: '200px',
+								minHeight: '293px',
 								bgcolor: '#bababa'
 							}}
 						>
@@ -105,12 +104,15 @@ const ContentFooter = () => {
 						<GridDateValue
 							day={'01'}
 							month={'09'}
+							md={12}
+							sm={12}
+							xs={12}
 						/>
 					</Grid>
 					<Grid
 						item
 						md={6}
-						sm={12}
+						sm={6}
 						xs={12}
 						sx={{
 							maxWidth: '293px',
@@ -217,17 +219,7 @@ const ContentFooter = () => {
 							</Box>
 						</Grid>
 					</Grid>
-
 				</Grid>
-
-
-
-
-
-
-
-
-
 			</Grid>
 		</>
 	);

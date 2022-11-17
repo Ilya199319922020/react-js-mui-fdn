@@ -15,9 +15,9 @@ export const ComponentNews = () => {
 	return (
 		<Grid
 			item
-			md={3}
-			sm={3}
-			xs={3}
+			md={6}
+			sm={6}
+			xs={6}
 			sx={{
 				maxWidth: '293px',
 				height: '293px',
