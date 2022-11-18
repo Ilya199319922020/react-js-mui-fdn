@@ -17,7 +17,7 @@ const ContentFooter = () => {
 				xs={12}
 				sx={{
 					maxWidth: '1172px',
-					maxHeight: '586px',
+					// maxHeight: '586px',
 					px: '375px',
 				}}
 			>

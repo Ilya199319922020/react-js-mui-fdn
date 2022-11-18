@@ -10,9 +10,13 @@ const Header = () => {
 	return (
 		<Grid
 			container
+			md={12}
+			sm={12}
+			xs={12}
 			sx={{
 				maxWidth: '1920px',
-				maxHeight: '879px',
+				display: 'flex',
+				justifyContent: 'center'
 			}}
 		>
 			<Grid
@@ -22,14 +26,14 @@ const Header = () => {
 				xs={7.8375}
 				sx={{
 					maxWidth: '1254px',
-					maxHeight: '879px',
+					minHeight: '826px',
 					bgcolor: '#bababa',
 				}}
 			>
 				<Grid
 					container
 					md={12}
-					sm={6}
+					sm={12}
 					xs={6}
 					sx={{
 						paddingLeft: '375px',
@@ -41,8 +45,7 @@ const Header = () => {
 						sm={12}
 						sx={{
 							maxWidth: '1254px',
-							minHeight: '293px',
-							maxHeight: '293px',
+							 minHeight: '240px',
 							pt: '15px'
 						}}
 					>
@@ -64,19 +67,18 @@ const Header = () => {
 				xs={4.1625}
 				sx={{
 					maxWidth: '666px',
-					minWidth: '600px',
-					maxHeight: '879px',
-					minHeight: '600px',
+					minWidth: '550px',
+					minHeight: '826px',
 				}}
 			>
 				<Grid
 					item
 					md={12}
-					sm={6}
+					sm={12}
 					xs={6}
 					sx={{
 						maxWidth: '666px',
-						maxHeight: '879px',
+						minHeight: '600px',
 						bgcolor: '#232126',
 						m: 0,
 						pl: 0,

@@ -29,7 +29,7 @@ const ContentGrade = () => {
 			xs={12}
 			sx={{
 				maxWidth: '1172px',
-				maxHeight: '879px',
+				// maxHeight: '879px',
 				minHeight: '500px',
 				px: '375px',
 			}}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box } from '@mui/material';
+import { Box, Grid } from '@mui/material';
 import Header from './Header/Header';
 import ContentTitle from './Main/ContentTitle/ContentTitle';
 import ContentSearch from './Main/ContentSearch/ContentSearch';
@@ -9,10 +9,10 @@ import Footer from './Footer/Footer';
 
 const Content = () => {
   return (
-    <Box
+    <Grid
       sx={{
         maxWidth: '1920px',
-        maxHeight: 'auto',
+        maxHeight: '3249px',
         m: 0,
         pl: 0,
         pt: 0
@@ -24,7 +24,7 @@ const Content = () => {
       <ContentGrade />
       <ContentFooter />
       <Footer />
-    </Box>
+    </Grid>
   );
 };
 

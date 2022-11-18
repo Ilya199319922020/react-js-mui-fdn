@@ -2,6 +2,7 @@ import { Grid, Box, Typography } from "@mui/material";
 import HorizontalRuleIcon from '@mui/icons-material/HorizontalRule';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import ArrowLeftIcon from '@mui/icons-material/ArrowLeft';
+import icon from '../../assets/image/Polygon2.png';
 
 export const GridText = ({ title, text }) => {
 	return (
@@ -13,7 +14,7 @@ export const GridText = ({ title, text }) => {
 				xs={6}
 				sx={{
 					maxWidth: '293px',
-					height: '293px',
+					minHeight: '293px',
 				}}
 			>
 				<Box
@@ -53,7 +54,7 @@ export const GridText = ({ title, text }) => {
 	);
 };
 
-export const GridSize = ({ sizeText }) => {
+export const GridSize = ({ sizeText, id }) => {
 	return (
 		<>
 			<Grid
@@ -63,7 +64,7 @@ export const GridSize = ({ sizeText }) => {
 				xs={6}
 				sx={{
 					maxWidth: '293px',
-					height: '293px',
+					minHeight: '293px',
 					bgcolor: '#bababa',
 				}}
 				container
@@ -74,7 +75,7 @@ export const GridSize = ({ sizeText }) => {
 				<Typography
 					variant="h4"
 					sx={{
-						fontSize: '35px'
+						fontSize: '35px',
 					}}
 				>
 					{
@@ -87,7 +88,7 @@ export const GridSize = ({ sizeText }) => {
 };
 
 export const GridDateValue = ({ day, month, bg, md, sm, xs }) => {
-	
+
 	return (
 		<>
 			<Grid

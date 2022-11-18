@@ -16,7 +16,7 @@ const SiseBarHeader = () => {
 				sm={12}
 				xs={12}
 				sx={{
-					pr: '80px'
+					pr: '80px',
 				}}
 			>
 				<Grid
@@ -24,7 +24,7 @@ const SiseBarHeader = () => {
 					md={6}
 					sx={{
 						maxWidth: '293px',
-						maxHeight: '293px',
+						minHeight: '240px',
 					}}
 				>
 					<Box
@@ -80,21 +80,23 @@ const SiseBarHeader = () => {
 				<Grid
 					item
 					md={6}
+					sm={6}
+					xs={6}
 					sx={{
-						width: '293px',
-						minHeight: '293px',
-						maxHeight: '293px',
+						maxWidth: '293px',
+						minHeight: '240px',
 					}}
 				>
 				</Grid>
 				<Grid
 					item
 					md={6}
+					sm={6}
+					xs={6}
 					sx={{
 						backgroundColor: 'white',
 						maxWidth: '293px',
 						minHeight: '293px',
-						maxHeight: '293px',
 					}}
 					container
 					direction="column"
@@ -120,7 +122,7 @@ const SiseBarHeader = () => {
 						</Typography>
 						<Typography
 							variant="body1"
-							sx={{								
+							sx={{
 								fontSize: '20px'
 							}}
 						>
@@ -137,6 +139,12 @@ const SiseBarHeader = () => {
 				<Grid
 					item
 					md={12}
+					sm={12}
+					xs={12}
+					sx={{
+						maxWidth: '293px',
+						minHeight: '293px',
+					}}
 				>
 				</Grid>
 			</Grid>

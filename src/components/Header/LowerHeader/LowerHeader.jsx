@@ -11,7 +11,7 @@ const LowerHeader = () => {
 				sx={{
 					maxWidth: '586px',
 					minWidth: '20px',
-					maxHeight: '293px',
+					minHeight: '293px',
 				}}
 			>
 			</Grid>
@@ -21,7 +21,7 @@ const LowerHeader = () => {
 				sm={12}
 				sx={{
 					maxWidth: '1254px',
-					minWidth: '250px',
+					minWidth: '293px',
 					minHeight: '293px',
 					bgcolor: '#03abff',
 				}}

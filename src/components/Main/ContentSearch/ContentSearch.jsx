@@ -15,7 +15,7 @@ const ContentSearch = () => {
 				xs={12}
 				sx={{
 					maxWidth: '1920px',
-					height: '293px',
+					// height: '293px',
 				}}
 			>
 
@@ -116,6 +116,7 @@ const ContentSearch = () => {
 					<Box
 						sx={{
 							minWidth: '515px',
+							position: 'relative',
 						}}
 					>
 						<TextField
@@ -126,19 +127,15 @@ const ContentSearch = () => {
 
 									color: "#faf9f7",
 								},
-								'& .MuiInputBase-input': {
+															'& :before': {
 									borderColor: "#faf9f7",
-									color: "#faf9f7",
-								},
-								'& ::before': {
-									borderColor: "#faf9f7",
-								}
+								},	
 							}}
 							label="What you're looking for"
 							InputProps={{
 								endAdornment: (
 									<InputAdornment position="start">
-										<SearchIcon sx={{ disply: 'flex', alignItems: 'center', color: "#faf9f7", mr: 1 }} />
+										<SearchIcon sx={{ display: 'flex', alignItems: 'center', color: "#faf9f7", mr: 1 }} />
 									</InputAdornment>
 								),
 							}}

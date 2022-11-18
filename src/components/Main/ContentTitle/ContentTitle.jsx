@@ -13,6 +13,7 @@ const ContentTitle = () => {
 			/>
 			: element.sizeText
 				? <GridSize
+				id={element.id}
 					key={element.id}
 					sizeText={element.sizeText}
 				/>
@@ -36,6 +37,7 @@ const ContentTitle = () => {
 				? <GridSize
 					key={element.id}
 					sizeText={element.sizeText}
+					id={element.id}
 				/>
 				: <GridDateValue
 					key={element.id}
@@ -56,7 +58,6 @@ const ContentTitle = () => {
 			xs={12}
 			sx={{
 				maxWidth: '1172px',
-				maxHeight: '586px',
 				minHeight: '300px',
 				px: '375px',
 			}}
@@ -68,9 +69,9 @@ const ContentTitle = () => {
 				xs={12}
 				sx={{
 					maxWidth: '586px',
-					minWidth: '500px',
+					minWidth: '300px',
 					maxHeight: '586px',
-					minHeight: '500px',
+					minHeight: '300px',
 				}}
 			>
 				{
@@ -84,9 +85,9 @@ const ContentTitle = () => {
 				xs={12}
 				sx={{
 					maxWidth: '586px',
-					minWidth: '500px',
+					minWidth: '300px',
 					maxHeight: '586px',
-					minHeight: '500px',
+					minHeight: '300px',
 				}}
 			>
 				{
