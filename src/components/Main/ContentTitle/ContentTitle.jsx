@@ -59,7 +59,7 @@ const ContentTitle = () => {
 			sx={{
 				maxWidth: '1172px',
 				minHeight: '300px',
-				px: '375px',
+				// px: '375px',
 			}}
 		>
 			<Grid
@@ -69,7 +69,7 @@ const ContentTitle = () => {
 				xs={12}
 				sx={{
 					maxWidth: '586px',
-					minWidth: '300px',
+					minWidth: '350px',
 					maxHeight: '586px',
 					minHeight: '300px',
 				}}
@@ -85,7 +85,7 @@ const ContentTitle = () => {
 				xs={12}
 				sx={{
 					maxWidth: '586px',
-					minWidth: '300px',
+					minWidth: '350px',
 					maxHeight: '586px',
 					minHeight: '300px',
 				}}

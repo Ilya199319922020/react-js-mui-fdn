@@ -3,7 +3,6 @@ import HorizontalRuleIcon from '@mui/icons-material/HorizontalRule';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import ArrowLeftIcon from '@mui/icons-material/ArrowLeft';
 import icon from '../../assets/image/Polygon2.png';
-
 export const GridText = ({ title, text }) => {
 	return (
 		<>
@@ -14,7 +13,7 @@ export const GridText = ({ title, text }) => {
 				xs={6}
 				sx={{
 					maxWidth: '293px',
-					minHeight: '293px',
+					 minHeight: '293px',
 				}}
 			>
 				<Box

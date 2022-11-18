@@ -1,28 +1,28 @@
 export const arrData = {
-	partFirst:[
+	partFirst: [
 		{
-		id: 1,
-		title: 'QUR SERVICES',
-		text: 'Qur mission is to provide the highest level of service for our client-partners from concept through',
-	},
-	{
-		id: 2,
-		sizeText: '293 x 293',
-	},
-	{
-		id: 5,
-		day: '03',
-		month: '06',
-	},
-	{
-		id: 7,
-		title: 'Project design and engineering',
-		text: `
+			id: 1,
+			title: 'QUR SERVICES',
+			text: 'Qur mission is to provide the highest level of service for our client-partners from concept through',
+		},
+		{
+			id: 2,
+			sizeText: '293 x 293',
+		},
+		{
+			id: 5,
+			day: '03',
+			month: '06',
+		},
+		{
+			id: 45,
+			title: 'Project design and engineering',
+			text: `
 		Qur mission is to provide the highest level of service for our 
 		client-partners from concept through highest 
 		level of service for our client-partners from concept through`,
-	},
-],
+		},
+	],
 	partThe: [
 		{
 			id: 3,

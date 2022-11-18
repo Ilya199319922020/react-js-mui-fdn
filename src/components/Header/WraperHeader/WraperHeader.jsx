@@ -1,24 +1,23 @@
 import { Button, Grid, Typography } from '@mui/material';
 import React from 'react';
 import HorizontalRuleIcon from '@mui/icons-material/HorizontalRule';
-import { Box } from '@mui/system';
 
 const WraperHeader = () => {
 	return (
 		<>
 			<Grid
 				item
-				md={8}
+				md={4}
 				sm={12}
 				xs={12}
 				sx={{
 					maxWidth: '586px',
 					minWidth: '293px',
-					minHeight: '293px',
+					minHeight: '0px',  //
 					bgcolor: '#fbff03',
 				}}
 			>
-				<Box
+				{/* <Box
 					sx={{
 						py: '40px',
 						px: '30px',
@@ -58,15 +57,15 @@ const WraperHeader = () => {
 					>
 						READ MODE
 					</Button>
-				</Box>
+				</Box> */}
 			</Grid>
 			<Grid
 				item
 				md={4}
-				sm={4}
+				sm={12}
 				xs={4}
 				sx={{
-					maxWidth: '1254px',
+					maxWidth: '293px',
 					minHeight: '20px',
 				}}
 			>

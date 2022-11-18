@@ -5,22 +5,21 @@ import PlayCircleIcon from '@mui/icons-material/PlayCircle';
 const LowerHeader = () => {
 	return (
 		<>
-			<Grid
+			{/* <Grid
 				item
 				md={8}
 				sx={{
-					maxWidth: '586px',
-					minWidth: '20px',
+					maxWidth: '0px',
 					minHeight: '293px',
 				}}
 			>
-			</Grid>
+			</Grid> */}
 			<Grid
 				item 
 				md={4}
 				sm={12}
 				sx={{
-					maxWidth: '1254px',
+					maxWidth: '879px',
 					minWidth: '293px',
 					minHeight: '293px',
 					bgcolor: '#03abff',

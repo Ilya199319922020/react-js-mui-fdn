@@ -9,22 +9,22 @@ import Footer from './Footer/Footer';
 
 const Content = () => {
   return (
-    <Grid
+    <Box
       sx={{
-        maxWidth: '1920px',
+        maxWidth: '1172px',
         maxHeight: '3249px',
-        m: 0,
+        m: '0 auto',
         pl: 0,
-        pt: 0
+        pt: 0,
       }}
     >
       <Header />
       <ContentTitle />
-      <ContentSearch />
+      {/* <ContentSearch />
       <ContentGrade />
       <ContentFooter />
-      <Footer />
-    </Grid>
+      <Footer /> */}
+    </Box>
   );
 };
 
