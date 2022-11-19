@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Grid } from '@mui/material';
+import { Box } from '@mui/material';
 import Header from './Header/Header';
 import ContentTitle from './Main/ContentTitle/ContentTitle';
 import ContentSearch from './Main/ContentSearch/ContentSearch';
@@ -13,17 +13,17 @@ const Content = () => {
       sx={{
         maxWidth: '1172px',
         maxHeight: '3249px',
-        m: '0 auto',
+         m: '0 auto',
         pl: 0,
         pt: 0,
       }}
     >
       <Header />
       <ContentTitle />
-      {/* <ContentSearch />
+      <ContentSearch />
       <ContentGrade />
       <ContentFooter />
-      <Footer /> */}
+      <Footer />
     </Box>
   );
 };

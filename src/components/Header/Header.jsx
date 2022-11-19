@@ -11,7 +11,6 @@ import ArrowLeftIcon from '@mui/icons-material/ArrowLeft';
 import image from '../../assets/image/Frame1.png';
 
 const Header = () => {
-
 	return (
 		<>
 			<Grid

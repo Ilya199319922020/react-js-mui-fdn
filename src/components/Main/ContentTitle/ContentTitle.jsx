@@ -59,17 +59,18 @@ const ContentTitle = () => {
 			sx={{
 				maxWidth: '1172px',
 				minHeight: '300px',
-				// px: '375px',
+				display: 'flex',
+					justifyContent: 'center',
 			}}
 		>
 			<Grid
 				container
 				md={6}
-				sm={6}
+				sm={12}
 				xs={12}
 				sx={{
 					maxWidth: '586px',
-					minWidth: '350px',
+					minWidth: '586px',
 					maxHeight: '586px',
 					minHeight: '300px',
 				}}
@@ -81,11 +82,11 @@ const ContentTitle = () => {
 			<Grid
 				container
 				md={6}
-				sm={6}
+				sm={12}
 				xs={12}
 				sx={{
 					maxWidth: '586px',
-					minWidth: '350px',
+					minWidth: '586px',
 					maxHeight: '586px',
 					minHeight: '300px',
 				}}

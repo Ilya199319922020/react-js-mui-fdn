@@ -13,13 +13,16 @@ export const GridText = ({ title, text }) => {
 				xs={6}
 				sx={{
 					maxWidth: '293px',
-					 minHeight: '293px',
+					minHeight: '293px',
+					display: 'flex',
+					justifyContent: 'center',
+					alignItems: 'center',
 				}}
 			>
 				<Box
 					sx={{
-						py: '40px',
-						px: '30px',
+						maxWidth: '250px',
+						minHeight: '250px',
 					}}
 				>
 					<Typography
@@ -40,7 +43,6 @@ export const GridText = ({ title, text }) => {
 					<Typography
 						sx={{
 							height: '30px',
-							pb: '70px'
 						}}
 					>
 						{
@@ -97,7 +99,6 @@ export const GridDateValue = ({ day, month, bg, md, sm, xs }) => {
 				xs={xs}
 				sx={{
 					maxWidth: '293px',
-					minWidth: '293px',
 					minHeight: '293px',
 					bgcolor: bg,
 				}}
