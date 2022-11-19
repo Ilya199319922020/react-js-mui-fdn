@@ -1,32 +1,27 @@
 import React from 'react';
-import { Grid } from '@mui/material';
+import { Box, Grid } from '@mui/material';
 
-export const ImageContentSearchA = ({md, sm,xs , bg, children }) => {
+export const ImageContentSearchA = ({  bg, children }) => {
 	return (
 		<>
-			<Grid
-				item
-				
-				md={md}
-				sm={sm}
-				xs={xs}
+			<Box
 				sx={{
 					maxWidth: '293px',
-					minWidth: '200px',
+					minWidth: '293px',
 					minHeight: '293px',
 					maxHeight: '293px',
 					bgcolor: bg,
+					display: 'flex',
+					flexDirection: 'column',
+					justifyContent: 'center',
+					alignItems: 'center'
 				}}
-				container
-				direction="column"
-				alignItems="center"
-				justifyContent={"center"}
 			>
 				{
 					children
 				}
 
-			</Grid>
+			</Box>
 		</>
 	);
 };

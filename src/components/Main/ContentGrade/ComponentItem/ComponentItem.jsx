@@ -1,22 +1,21 @@
 import React from 'react';
 import CropOriginalIcon from '@mui/icons-material/CropOriginal';
-import { Box, Grid, Typography } from '@mui/material';
+import { Box,  Typography } from '@mui/material';
 
 export const ComponentItemNickname = ({ 
-	bg, children, sizeW, texTitle, divider 
+	bg, children, sizeW, texTitle 
 }) => {
-	const denominator = divider ? divider : 6;
 	
 	return (
-		<Grid
-			item
-			md={denominator}
-			sm={denominator}
-			xs={denominator}
+		<Box
 			sx={{
 				maxWidth: sizeW,
-				height: '293px',
-				bgcolor: bg
+				minWidth: '293px',
+				minHeight: '293px',
+				maxHeight: '293px',
+				bgcolor: bg,
+				display: 'flex',
+
 			}}
 			container
 			direction="column"
@@ -52,7 +51,7 @@ export const ComponentItemNickname = ({
 					children
 				}
 			</Box>
-		</Grid>
+		</Box>
 	);
 };
 

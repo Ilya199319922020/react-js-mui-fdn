@@ -16,6 +16,7 @@ export const ComponentCardGrade = ({ xs, sm, md,
 			xs={xs}
 			sx={{
 				maxWidth: sizeW,
+				minWidth: '586px',
 				maxHeight: sizeH,
 				minHeight: sizeH === 586 ? '400px' : '293px',
 				bgcolor: bg,

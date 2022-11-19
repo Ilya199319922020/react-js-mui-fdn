@@ -22,8 +22,8 @@ const Content = () => {
       <ContentTitle />
       <ContentSearch />
       <ContentGrade />
-      <ContentFooter />
-      <Footer />
+      {/* <ContentFooter />
+      <Footer /> */}
     </Box>
   );
 };

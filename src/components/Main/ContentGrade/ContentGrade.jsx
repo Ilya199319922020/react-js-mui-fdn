@@ -24,31 +24,26 @@ const ContentGrade = () => {
 	return (
 		<Grid
 			container
-			md={12}
-			sm={12}
-			xs={12}
 			sx={{
 				maxWidth: '1172px',
-				// maxHeight: '879px',
-				minHeight: '500px',
-				px: '375px',
+				minHeight: '586px',
+				display: 'flex',
+				justifyContent: 'center',
 			}}
-
 		>
 			<Grid
-				container
+				item
 				md={6}
 				sm={6}
 				xs={12}
 				sx={{
 					maxWidth: '586px',
-					minWidth: '400px',
+					minWidth: '586px',
 					maxHeight: '879px',
 					minHeight: '600px',
 				}}
 			>
 				<ComponentItemNickname
-					divider={12}
 					sizeW={'586px'}
 					texTitle={'Martin H.JHonsons'}
 				>
@@ -74,7 +69,6 @@ const ContentGrade = () => {
 					</Typography>
 				</ComponentItemNickname>
 				<ComponentItemNickname
-					divider={12}
 					bg={'#d6c19c'}
 					sizeW={'586px'}
 					texTitle={'Tony SH.Schults'}
@@ -117,50 +111,59 @@ const ContentGrade = () => {
 						/>
 					</Box>
 				</ComponentItemNickname>
-				<ComponentNews />
-				<ComponentItemNickname
-					sizeW={'293px'}
-					texTitle={'David Mc. Adams'}
-					divider={6}
+				<Grid
+					item
+					md={6}
+					sm={6}
+					xs={12}
+					sx={{
+						maxWidth: '586px',
+						minWidth: '586px',
+						minHeight: '293px',
+						maxHeight: '293px',
+						display: 'flex'
+					}}
 				>
-					<Box
-						display="flex"
+					<ComponentNews />
+					<ComponentItemNickname
+						sizeW={'293px'}
+						texTitle={'David Mc. Adams'}
 					>
-						{
-							elementsGradeIcon
-						}
-					</Box>
-					<Typography
-						sx={{
-							height: '30px',
-							pb: '70px',
-							pt: '10px',
-							textAlign: 'center',
-						}}
-					>
-						Client-partners from concept through highest
-						level of service for our client-partners from concept through
-					</Typography>
-				</ComponentItemNickname>
+						<Box
+							display="flex"
+						>
+							{
+								elementsGradeIcon
+							}
+						</Box>
+						<Typography
+							sx={{
+								height: '30px',
+								pb: '70px',
+								pt: '10px',
+								textAlign: 'center',
+							}}
+						>
+							Client-partners from concept through highest
+							level of service for our client-partners from concept through
+						</Typography>
+					</ComponentItemNickname>
+				</Grid>
 			</Grid>
-
 			<Grid
-				container
+				item
 				md={6}
 				sm={6}
 				xs={12}
 				sx={{
 					maxWidth: '586px',
-					minWidth: '400px',
-					maxHeight: '586px',
-					minHeight: '300px',
+					minWidth: '293px',
+					maxHeight: '879px',
+					minHeight: '586px',
 				}}
 			>
 				<ComponentCardGrade
 					bg={'#bababa'}
-					md={12}
-					sm={12}
-					xs={12}
 					sizeW={586}
 					sizeH={293}
 					textTitlleTop={'YOUR BULDING IS IN'}
@@ -171,63 +174,78 @@ const ContentGrade = () => {
 					client-partners from concept through highest
 					level of service for our client-partners from concept through
 				</ComponentCardGrade>
-				<ContentIcon
-					valueNumber={'55 000'}
-					textCard={'Expert Witness'}
+				<Grid
+					item
+					md={12}
+					sm={12}
+					xs={6}
+					sx={{
+						display: 'flex',
+						minWidth: '293px',
+					}}
 				>
-					<ElectricBoltIcon
-						sx={{
-							fontSize: '400%',
-							color: '#03abff',
-							bgcolor: '#fbff03'
-						}}
-					/>
-				</ContentIcon>
-				<ContentIcon
-					valueNumber={'142 600'}
-					textCard={'Construction'}
-					bg={'#bababa'}
+					<ContentIcon
+						valueNumber={'55 000'}
+						textCard={'Expert Witness'}
+					>
+						<ElectricBoltIcon
+							sx={{
+								fontSize: '400%',
+								color: '#03abff',
+								bgcolor: '#fbff03'
+							}}
+						/>
+					</ContentIcon>
+					<ContentIcon
+						valueNumber={'142 600'}
+						textCard={'Construction'}
+						bg={'#bababa'}
+					>
+						<OpacityIcon
+							sx={{
+								fontSize: '400%',
+								color: '#03abff',
+								bgcolor: '#fbff03'
+							}}
+						/>
+					</ContentIcon>
+				</Grid>
+				<Grid
+					md={12}
+					sm={12}
+					xs={6}
+					sx={{
+						minWidth: '586px',
+						display: 'flex'
+					}}
 				>
-					<OpacityIcon
-						sx={{
-							fontSize: '400%',
-							color: '#03abff',
-							bgcolor: '#fbff03'
-						}}
-					/>
-				</ContentIcon>
-
-
-				<ContentIcon
-					valueNumber={'18 000'}
-					textCard={'Procurement'}
-					bg={'#bababa'}
-				>
-					<SettingsIcon
-						sx={{
-							fontSize: '400%',
-							color: '#03abff',
-							bgcolor: '#fbff03'
-						}}
-					/>
-				</ContentIcon>
-				<ContentIcon
-					valueNumber={'78 150'}
-					textCard={'Projects Managments'}
-				>
-					<LightbulbIcon
-						sx={{
-							fontSize: '400%',
-							color: '#03abff',
-							bgcolor: '#fbff03'
-						}}
-					/>
-				</ContentIcon>
-
-			</Grid> *
-
-
-
+					<ContentIcon
+						valueNumber={'18 000'}
+						textCard={'Procurement'}
+						bg={'#bababa'}
+					>
+						<SettingsIcon
+							sx={{
+								fontSize: '400%',
+								color: '#03abff',
+								bgcolor: '#fbff03'
+							}}
+						/>
+					</ContentIcon>
+					<ContentIcon
+						valueNumber={'78 150'}
+						textCard={'Projects Managments'}
+					>
+						<LightbulbIcon
+							sx={{
+								fontSize: '400%',
+								color: '#03abff',
+								bgcolor: '#fbff03'
+							}}
+						/>
+					</ContentIcon>
+				</Grid>
+			</Grid>
 		</Grid>
 	);
 };

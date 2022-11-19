@@ -13,14 +13,12 @@ export const ComponentNews = () => {
 		);
 
 	return (
-		<Grid
-			item
-			md={6}
-			sm={6}
-			xs={6}
+		<Box
 			sx={{
 				maxWidth: '293px',
-				height: '293px',
+				minHeight: '293px',
+				maxHeight: '293px',
+				minWidth: '293px',
 				bgcolor: '#03abff',
 			}}
 		>
@@ -87,6 +85,6 @@ export const ComponentNews = () => {
 					}
 				</Box>
 			</Box>
-		</Grid>
+		</Box>
 	);
 };

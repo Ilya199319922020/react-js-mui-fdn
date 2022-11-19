@@ -1,23 +1,17 @@
 import React from 'react'
-import { Box, Grid, Typography } from '@mui/material';
+import { Box,  Typography } from '@mui/material';
 
 export const ContentIcon = ({ bg, valueNumber, textCard, children }) => {
 
 	return (
-		<Grid
-			item
-			md={6}
-			sm={6}
-			xs={6}
+		<Box
 			sx={{
 				maxWidth: '293px',
+				minWidth: '293px',
 				maxHeight: '293px',
 				minHeight: '293px',
 				bgcolor: bg,
 			}}
-			container
-			direction="column"
-
 		>
 			<Box
 				sx={{
@@ -56,7 +50,7 @@ export const ContentIcon = ({ bg, valueNumber, textCard, children }) => {
 					}
 				</Typography>
 			</Box>
-		</Grid>
+		</Box>
 	);
 };
 
