@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Grid } from '@mui/material';
+import { Box } from '@mui/material';
 
 export const ImageContentSearchA = ({  bg, children }) => {
 	return (
@@ -20,7 +20,6 @@ export const ImageContentSearchA = ({  bg, children }) => {
 				{
 					children
 				}
-
 			</Box>
 		</>
 	);

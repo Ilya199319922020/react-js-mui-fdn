@@ -1,4 +1,4 @@
-import { Grid, Box, } from '@mui/material';
+import { Grid  } from '@mui/material';
 import React from 'react';
 import { GridDateValue, GridSize, GridText } from '../../../assets/AuxiliaryComponents/AuxiliaryComponents';
 import { arrData } from '../../../assets/data/textData';
@@ -13,7 +13,7 @@ const ContentTitle = () => {
 			/>
 			: element.sizeText
 				? <GridSize
-				id={element.id}
+					id={element.id}
 					key={element.id}
 					sizeText={element.sizeText}
 				/>
@@ -60,7 +60,7 @@ const ContentTitle = () => {
 				maxWidth: '1172px',
 				minHeight: '300px',
 				display: 'flex',
-					justifyContent: 'center',
+				justifyContent: 'center',
 			}}
 		>
 			<Grid
@@ -71,7 +71,6 @@ const ContentTitle = () => {
 				sx={{
 					maxWidth: '586px',
 					minWidth: '586px',
-					maxHeight: '586px',
 					minHeight: '300px',
 				}}
 			>
@@ -87,7 +86,6 @@ const ContentTitle = () => {
 				sx={{
 					maxWidth: '586px',
 					minWidth: '586px',
-					maxHeight: '586px',
 					minHeight: '300px',
 				}}
 			>

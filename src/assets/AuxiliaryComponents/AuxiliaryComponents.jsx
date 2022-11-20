@@ -2,7 +2,7 @@ import { Grid, Box, Typography } from "@mui/material";
 import HorizontalRuleIcon from '@mui/icons-material/HorizontalRule';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import ArrowLeftIcon from '@mui/icons-material/ArrowLeft';
-import icon from '../../assets/image/Polygon2.png';
+
 export const GridText = ({ title, text }) => {
 	return (
 		<>
@@ -106,6 +106,7 @@ export const GridDateValue = ({ day, month, bg, md, sm, xs }) => {
 				direction="column"
 				alignItems="center"
 				justifyContent={"center"}
+
 			>
 				<ArrowLeftIcon
 					sx={{

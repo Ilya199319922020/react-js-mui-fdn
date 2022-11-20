@@ -5,17 +5,17 @@ import { createTheme, ThemeProvider } from '@mui/material';
 
 const theme = createTheme({
   typography: {
-      fontFamily: 'Rubik',
+    fontFamily: 'Rubik',
   }
 });
 
 function App() {
   return (
     <  >
-     <ThemeProvider theme={theme}>
-      <Routes>
-        <Route path='/' element={<Content />} />
-      </Routes>
+      <ThemeProvider theme={theme}>
+        <Routes>
+          <Route path='/' element={<Content />} />
+        </Routes>
       </ThemeProvider>
     </>
   );

@@ -7,30 +7,27 @@ import SettingsSuggestIcon from '@mui/icons-material/SettingsSuggest';
 import HorizontalRuleIcon from '@mui/icons-material/HorizontalRule';
 
 const ContentFooter = () => {
-
 	return (
 		<>
 			<Grid
 				container
-				md={12}
-				sm={12}
-				xs={12}
 				sx={{
 					maxWidth: '1172px',
-					// maxHeight: '586px',
-					px: '375px',
+					minHeight: '586px',
+					display: 'flex',
+					justifyContent: 'center',
 				}}
 			>
 				<Grid
-					container
+					item
 					md={6}
 					sm={6}
 					xs={12}
 					sx={{
 						maxWidth: '586px',
-						minWidth: '400px',
-						maxHeight: '586px',
+						minWidth: '586px',
 						minHeight: '300px',
+						display: 'flex',
 					}}
 				>
 					<ComponentCardGrade
@@ -39,9 +36,7 @@ const ContentFooter = () => {
 						textTitlleTop={'Contemporary Villa'}
 						textTitlleBottom={'GOOD HANDS'}
 						textBtn={'ABOUT COMPANY'}
-						md={6}
-						sm={6}
-						xs={12}
+
 					>
 						Hi mission is to provide the highest level of service for our
 						client-partners from concept through highest
@@ -56,7 +51,6 @@ const ContentFooter = () => {
 						xs={12}
 						sx={{
 							maxWidth: '293px',
-							maxHeight: '586px',
 							minHeight: '300px',
 							bgcolor: '#bababa'
 						}}
@@ -64,66 +58,41 @@ const ContentFooter = () => {
 					</Grid>
 				</Grid>
 				<Grid
-					container
+					item
 					md={6}
 					sm={6}
 					xs={12}
 					sx={{
 						maxWidth: '586px',
-						minWidth: '400px',
-						maxHeight: '586px',
+						minWidth: '586px',
 						minHeight: '300px',
 					}}
 				>
 					<Grid
-						container
-						md={6}
-						sm={6}
+						item
+						md={3}
+						sm={3}
 						xs={12}
 						sx={{
-							maxWidth: '293px',
-							minWidth: '200px',
-							maxHeight: '586px',
+							maxWidth: '586px',
+							minWidth: '586px',
+							maxHeight: '293px',
 							minHeight: '200px',
+							display: 'flex',
 						}}
 					>
-						<Grid
-							item
-							md={12}
-							sm={12}
-							xs={12}
+						<Box
 							sx={{
 								maxWidth: '293px',
-								minWidth: '200px',
+								minWidth: '293px',
 								maxHeight: '293px',
 								minHeight: '293px',
 								bgcolor: '#bababa'
 							}}
 						>
-						</Grid>
-						<GridDateValue
-							day={'01'}
-							month={'09'}
-							md={12}
-							sm={12}
-							xs={12}
-						/>
-					</Grid>
-					<Grid
-						item
-						md={6}
-						sm={6}
-						xs={12}
-						sx={{
-							maxWidth: '293px',
-							minWidth: '200px',
-							maxHeight: '586px',
-							minHeight: '586px',
-						}}
-					>
+						</Box>
 						<ImageContentSearchA
 							bg={'#fbff03'}
-							divider={12}
 						>
 							<SettingsSuggestIcon
 								sx={{
@@ -142,15 +111,31 @@ const ContentFooter = () => {
 								WORK WITH US
 							</Typography>
 						</ImageContentSearchA>
+					</Grid>
+					<Grid
+						item
+						md={3}
+						sm={3}
+						xs={12}
+						sx={{
+							maxWidth: '586px',
+							minWidth: '586px',
+							minHeight: '293px',
+							display: 'flex'
+						}}
+					>
+						<GridDateValue
+							day={'01'}
+							month={'09'}
+						/>
 						<Grid
 							item
-							md={12}
-							sm={12}
-							xs={12}
+							md={6}
+							sm={6}
+							xs={6}
 							sx={{
 								maxWidth: '293px',
-								minWidth: '200px',
-								maxHeight: '293px',
+								minWidth: '293px',
 								minHeight: '293px',
 								bgcolor: '#03abff'
 							}}

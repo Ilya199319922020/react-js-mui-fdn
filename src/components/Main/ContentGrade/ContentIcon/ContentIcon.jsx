@@ -8,7 +8,6 @@ export const ContentIcon = ({ bg, valueNumber, textCard, children }) => {
 			sx={{
 				maxWidth: '293px',
 				minWidth: '293px',
-				maxHeight: '293px',
 				minHeight: '293px',
 				bgcolor: bg,
 			}}
@@ -53,4 +52,3 @@ export const ContentIcon = ({ bg, valueNumber, textCard, children }) => {
 		</Box>
 	);
 };
-

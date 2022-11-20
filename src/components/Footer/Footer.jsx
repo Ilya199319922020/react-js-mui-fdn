@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Grid, Typography } from '@mui/material';
+import {  Button, Grid, Typography } from '@mui/material';
 
 const Footer = () => {
 	const [active, setActive] = useState(null);
@@ -15,26 +15,20 @@ const Footer = () => {
 	return (
 		<Grid
 			container
-			md={12}
-			sm={12}
-			xs={12}
 			sx={{
 				maxWidth: '1172px',
-				minHeight: '20px',
-				maxHeight: '40px',
-				px: '375px',
+				 minHeight: '40px',
 			}}
 		>
 			<Grid
 				item
-				md={5}
+				md={6}
 				sm={12}
 				xs={12}
 				sx={{
 					maxWidth: '350px',
-					minWidth: '350px',
-					maxHeight: '40px',
-					minHeight: '20px',
+					minWidth: '300px',
+					minHeight: '40px',
 					fontSize: '10px'
 				}}
 				display='flex'
@@ -43,7 +37,7 @@ const Footer = () => {
 				<Typography
 					sx={{
 						fontSize: '10px',
-						pr: '5px'
+						px: '5px'
 					}}
 				>
 					2015 @ Copyrigth - Foundation theme by
@@ -59,14 +53,13 @@ const Footer = () => {
 			</Grid>
 			<Grid
 				item
-				md={7}
+				md={6}
 				sm={12}
 				xs={12}
 				sx={{
 					maxWidth: '550px',
-					minWidth: '600px',
-					maxHeight: '40px',
-					minHeight: '20px',
+					minWidth: '450px',
+					minHeight: '40px',
 				}}
 				display='flex'
 				alignItems='center'

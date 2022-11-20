@@ -39,7 +39,6 @@ const ContentGrade = () => {
 				sx={{
 					maxWidth: '586px',
 					minWidth: '586px',
-					maxHeight: '879px',
 					minHeight: '600px',
 				}}
 			>
@@ -56,7 +55,6 @@ const ContentGrade = () => {
 					</Box>
 					<Typography
 						sx={{
-							maxHeight: '30px',
 							minHeight: '20px',
 							pb: '70px',
 							pt: '10px',
@@ -120,7 +118,6 @@ const ContentGrade = () => {
 						maxWidth: '586px',
 						minWidth: '586px',
 						minHeight: '293px',
-						maxHeight: '293px',
 						display: 'flex'
 					}}
 				>
@@ -157,9 +154,11 @@ const ContentGrade = () => {
 				xs={12}
 				sx={{
 					maxWidth: '586px',
-					minWidth: '293px',
-					maxHeight: '879px',
+					minWidth: '586px',
 					minHeight: '586px',
+					display: 'flex',
+					flexDirection: 'column',
+					justifiContent: 'center',
 				}}
 			>
 				<ComponentCardGrade

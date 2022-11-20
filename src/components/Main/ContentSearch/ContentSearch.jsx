@@ -17,55 +17,55 @@ const ContentSearch = () => {
 					maxWidth: '1172px',
 					display: 'flex',
 					justifyContent: 'center',
-				}}
+								}}
 			>
 				<ImageContentSearchA
 					bg={'#fbff03'}
 				>
-											<PictureAsPdfIcon
-							sx={{
-								fontSize: '500%',
-								textAlign: 'center',
-								verticalAlign: 'middle',
-							}}
-						/>
-						<Typography
-							color="black"
-							sx={{
-								fontSize: '14px',
-								pt: '10px'
-							}}
-						>
-							DOWNLOAD PRICE
-						</Typography>
+					<PictureAsPdfIcon
+						sx={{
+							fontSize: '500%',
+							textAlign: 'center',
+							verticalAlign: 'middle',
+						}}
+					/>
+					<Typography
+						color="black"
+						sx={{
+							fontSize: '14px',
+							pt: '10px'
+						}}
+					>
+						DOWNLOAD PRICE
+					</Typography>
 				</ImageContentSearchA>
 				<ImageContentSearchA
 					bg={'#03abff'}
 				>
-						<Box
-							xs={{
-								height: "80px",
-								width: '20px',
-								display: 'flex',
-								justifyContent: 'center',
-							}}
-						>
-							<img
-								src={image}
-								alt="scene"
-							/>
-						</Box>
-						<Typography
-							color="black"
-							sx={{
-								fontSize: '14px',
-								pt: '10px'
-							}}
-						>
-							CONTACT US
-						</Typography>
+					<Box
+						xs={{
+							height: "80px",
+							width: '20px',
+							display: 'flex',
+							justifyContent: 'center',
+						}}
+					>
+						<img
+							src={image}
+							alt="scene"
+						/>
+					</Box>
+					<Typography
+						color="black"
+						sx={{
+							fontSize: '14px',
+							pt: '10px'
+						}}
+					>
+						CONTACT US
+					</Typography>
 				</ImageContentSearchA>
-								<Grid
+				<Grid
 					item
 					md={6}
 					sm={6}
@@ -73,7 +73,6 @@ const ContentSearch = () => {
 					sx={{
 						maxWidth: '586px',
 						minWidth: '586px',
-						maxHeight: '293px',
 						minHeight: '293px',
 						bgcolor: '#232126',
 					}}
@@ -93,12 +92,11 @@ const ContentSearch = () => {
 							sx={{
 								maxWidth: '515px',
 								minWidth: '100%',
-								label: {
-
-									color: "#faf9f7",
-								},
 								'& :before': {
 									borderColor: "#faf9f7",
+								},
+								label: {
+									color: "#faf9f7",
 								},
 							}}
 							label="What you're looking for"
